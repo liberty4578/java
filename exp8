@@ -1,0 +1,24 @@
+Aim: WAP in java to print rate of interest using interface.
+Solution:
+import java.util.Scanner;
+interface RateInterface {
+    public void setRate(double rate);
+    public double getRate();
+}
+public class Rate implements RateInterface {
+    double rate ;
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+    public double getRate() {
+        return rate;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the rate: ");
+        double rate = sc.nextDouble();
+        Rate r = new Rate();
+        r.setRate(rate);
+        System.out.println("Rate: " + r.getRate());
+    }
+}
