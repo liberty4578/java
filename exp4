@@ -1,0 +1,15 @@
+Aim: WAP in java to enter 1 to 20 numbers using 1D array and print even numbers only.
+Solution:
+public class EvenNos {
+    public static void main(String[] args) {
+        int[] arr = new int[20];
+        for (int i = 0; i < 20; i++) {
+            arr[i] = i + 1;
+        }
+        for (int i = 0; i < 20; i++) {
+            if (arr[i] % 2 == 0) {
+                System.out.println(arr[i]);
+            }
+        }
+    }
+}
