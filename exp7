@@ -1,0 +1,28 @@
+Aim: WAP in java to enter employee salary and bonus and display it using single inheritance.
+Solution:
+import java.util.Scanner;
+class Salary {
+    int salary;
+    int bonus;
+    Scanner sc = new Scanner(System.in);
+    void getSalary() {
+        System.out.print("Enter the salary: ");
+        salary = sc.nextInt();
+    }
+    void getBonus() {
+        System.out.print("Enter the bonus: ");
+        bonus = sc.nextInt();
+    }
+    void display() {
+        System.out.println("Salary: " + salary);
+        System.out.println("Bonus: " + bonus);
+    }
+}
+public class Employee extends Salary {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.getSalary();
+        emp.getBonus();
+        emp.display();
+    }
+}
