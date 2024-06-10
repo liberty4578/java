@@ -1,0 +1,15 @@
+Aim: WAP in java to print speed of a bike using “final” variable.
+Solution:
+public class SpeedOfBike {
+    final int speed;
+    public SpeedOfBike(int speed) {
+        this.speed = speed;
+    }
+    public void display() {
+        System.out.println("Speed of bike: " + speed + " km/hr");
+    }    
+    public static void main(String[] args) {
+        SpeedOfBike bike = new SpeedOfBike(60);
+        bike.display();
+    }
+}
